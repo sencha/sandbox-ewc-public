@@ -1,4 +1,5 @@
 # ExtWebComponents Java Sandbox Project
+This is an simple example project featuring maven multi-module project architecture. 
 
 ## Project Manifest
 
