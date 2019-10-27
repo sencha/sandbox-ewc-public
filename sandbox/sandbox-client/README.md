@@ -18,6 +18,8 @@ npm install
 
 
 ### 3. Run webpackdev
+You can run the webpack compiler watch with terminal CLI or with IntelliJ IDEA Ultimate. 
+
 Run the webpack watcher, so every time you change a file it compiles and pushes to the webapp folder in the server.
 
 ```
