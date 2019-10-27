@@ -1,6 +1,21 @@
 # ExtWebComponents Java Sandbox Project
 
-## Debugging
+## Project Manifest
+
+### sandbox-client
+This module includes the ExtWebComponents project.
+
+- Note: The `./sandbox-client/build` is the build folder. 
+- Note: The `./sandbox-client/build` is copied to `./sandbox-server/target/sandbox` on each compile.  
+
+### sandbox-server
+This module includes the Java servlet container webapp.
+
+- Note: The build is compiled to `./sandbox-server/target/sandbox`. This is the webapp folder.  
+
+
+
+## Debug
 The debugging will be covered using IntelliJ Ultimate Debugging. 
 Although the same strategy could be done using terminal commands. 
 
