@@ -102,11 +102,10 @@ module.exports = function(env) {
             });
           }
         }
-
     ];
     return {
         mode: environment,
-        devtool: (environment === 'development') ? 'inline-source-map' : false,
+        devtool: (environment === 'development') ? 'source-map' : false,
         context: path.join(__dirname, './src'),
         //entry: './index.js',
         entry: {

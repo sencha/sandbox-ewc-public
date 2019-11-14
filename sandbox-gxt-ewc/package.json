@@ -1,0 +1,12 @@
+{
+  "name": "vanilla-js",
+  "version": "1.0.0",
+  "description": "ext-web-components example",
+  "scripts": {},
+  "devDependencies": {
+    "@sencha/ext-web-components": "~7.1.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {}
+}

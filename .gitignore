@@ -27,3 +27,5 @@ tomcat/
 build
 node_modules
 !.idea
+
+node_modules

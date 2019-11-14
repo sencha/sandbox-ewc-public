@@ -1,0 +1,73 @@
+<style>
+.wrap {
+    padding: 10px;
+}
+
+.table {
+	display: table;
+	width: 100%;
+	table-layout: auto;
+}
+
+.tableRow {
+	display: table-row;
+}
+
+.tableCell {
+    display: table-cell;
+	padding: 3px 10px;
+}
+
+.col1 {
+	min-width: 50px;
+	white-space: nowrap;
+	text-align: right;
+}
+
+.col2 {
+	width: 100%;
+}
+
+.flow {
+	width: 100% !important;
+}
+.flow * {
+	width: 100% !important;
+}
+								  }
+</style>
+
+<div class="wrap">
+	<div class="table">
+	    <div class="tableRow">
+			<div class="label1 tableCell col1"></div>
+			<div class="content1 tableCell col2"></div>
+		</div>
+		
+		<div class="tableRow">
+			<div class="label2 tableCell col1"></div>
+			<div class="content2 tableCell col2"></div>
+		</div>
+		
+		<div class="tableRow">
+			<div class="label3 tableCell col1"></div>
+			<div class="content3 tableCell col2"></div>
+		</div>
+
+		<div class="tableRow">
+			<div class="label3 tableCell col1"></div>
+
+			<div class="content3 tableCell col2">
+				<!-- 3. Use the component -->
+				<my-view></my-view>
+			</div>
+		</div>
+
+		<div class="tableRow">
+			<div class="label3 tableCell col1"></div>
+			<div class="content3 tableCell col2">
+				<my-view-buttons></my-view-buttons>
+			</div>
+		</div>
+	</div>
+</div>
