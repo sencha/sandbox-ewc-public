@@ -2,7 +2,7 @@
 
 ## Project Highlights
 
-- [ExtWebComponents.js](sandbox-gxt-ewc/src/main/java/com/projectname/project/client/ExtWebComponents.js) - the ExtWebComponents source. 
+- [ExtWebComponents.js](sandbox-gxt-ewc/src/main/java/com/projectname/project/client/ExtWebComponents.js) - the Web Components source. 
 - [FromTemplate.html](https://github.com/sencha/sandbox-ewc-public/blob/master/sandbox-gxt-ewc/src/main/java/com/projectname/project/client/myview/FormTemplate.html#L63) - Where the Web Components are being used. 
 
 ## Create the Project
@@ -48,3 +48,18 @@ Follow these three steps to add ExtWebComponents to your GXT Application.
 ```
 
 4. Run `npm install`. This will download the dependencies used in the project. 
+
+
+## Debug
+This configuration uses the webcomponents with out a bundler. 
+This means the javascript has to be copied to the webapp directory. 
+
+### Create Launcher
+1. Run `npm install` - this downloads the node_modules
+2. Run `mvn resources:copy-resources` - this copys the node modules to the webapp folder. 
+3. Create an IDE launcher to run the project.
+4. Launch the GWT debugger. 
+
+### Modifications
+1. Make a code modification
+2. Reload the browser and the GWT compiler will recompile the changes. 
