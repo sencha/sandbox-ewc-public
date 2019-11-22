@@ -12,7 +12,7 @@ target/
 war/
 doc/
 
-# Working directories
+# GWT & GXT
 .gwt/
 .gwt-tmp/
 gwt-unitCache/
@@ -27,5 +27,5 @@ tomcat/
 build
 node_modules
 !.idea
+package-lock.json
 
-node_modules

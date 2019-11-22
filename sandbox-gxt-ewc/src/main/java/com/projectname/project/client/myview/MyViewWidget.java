@@ -42,6 +42,7 @@ public class MyViewWidget implements IsWidget {
                 @Override
                 public void onAttachOrDetach(AttachEvent event) {
                     if (widget.isAttached()) {
+                        // Listen to events once the widget is attached to the DOM
                         addEwcListeners();
                     }
                 }
@@ -50,7 +51,12 @@ public class MyViewWidget implements IsWidget {
         return widget;
     }
 
+    /**
+     * Listen to ExtWebComponent events
+     */
     private void addEwcListeners() {
+        // Use Elemental2 to wire up the event listener
+        // Capture the event as it propagates
         Element buttonEl = Js.cast(widget.getElement());
         buttonEl.addEventListener("ext-button-tap", new EventListener() {
             @Override
@@ -60,6 +66,9 @@ public class MyViewWidget implements IsWidget {
         }, true);
     }
 
+    /**
+     * Create a form using the FormTemplate.html
+     */
     private HtmlLayoutContainer createForm() {
         InlineHTML label1 = new InlineHTML("Name :");
         InlineHTML label2 = new InlineHTML("Select :");

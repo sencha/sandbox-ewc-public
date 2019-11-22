@@ -16,6 +16,10 @@ import com.projectname.project.client.myview.MyViewWidget;
  */
 public class GxtEwcProjectEntryPoint implements EntryPoint {
 
+  /**
+   * Store the ExtWebComponents script in this package and fetch it when needed.
+   * This could be stored in the webapp folder, although using the embedded Jetty instance, it's faster to load dynamically.
+   */
   interface Resources extends ClientBundle {
     Resources INSTANCE = GWT.create(Resources.class);
 
@@ -36,7 +40,7 @@ public class GxtEwcProjectEntryPoint implements EntryPoint {
 
         @Override
         public void onSuccess(TextResource text) {
-          // Append the ewc script
+          // Append the ExtWebComponents JavaScript to the DOM
           ScriptElement scriptEl = Document.get().createScriptElement();
           scriptEl.setInnerHTML(text.getText());
           scriptEl.setType("module");
