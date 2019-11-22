@@ -4,6 +4,7 @@
 
 - [ExtWebComponents.js](sandbox-gxt-ewc/src/main/java/com/projectname/project/client/ExtWebComponents.js) - the Web Components source. 
 - [FromTemplate.html](https://github.com/sencha/sandbox-ewc-public/blob/master/sandbox-gxt-ewc/src/main/java/com/projectname/project/client/myview/FormTemplate.html#L63) - Where the Web Components are being used. 
+- [Entry Point](https://github.com/sencha/sandbox-ewc-public/blob/master/sandbox-gxt-ewc/src/main/java/com/projectname/project/client/GxtEwcProjectEntryPoint.java#L35) - It's important to note that the resources are loaded dynamically so the debugging can happen instantatly with out restarting the debugger. 
 
 ## Create the Project
 There are two steps to use this project.
