@@ -8,7 +8,7 @@ Secondly, import and configure the ExtWebComponent usage.
 ### Create GXT Project
 Follow these steps to setup a bare bones GXT project. 
 
-1. Login to maven, [using settings.xml(https://docs.sencha.com/gxt/4.x/guides/getting_started/maven/Maven.html).
+1. Login to maven, [using settings.xml](https://docs.sencha.com/gxt/4.x/guides/getting_started/maven/Maven.html).
 
 2. Generate your a project with this. 
 ```
