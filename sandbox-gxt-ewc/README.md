@@ -1,4 +1,5 @@
 # ExtWebComponent Project Examples
+This is a quick example to show how easy it is to use ExtWebComponents in your GXT application. 
 
 ## Project Highlights
 
